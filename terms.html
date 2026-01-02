@@ -1,62 +1,76 @@
 <!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Terms of Service | Labib</title>
-  <meta name="description" content="Terms of Service for Labib CRM Bot" />
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.6;margin:0;background:#0b1220;color:#e6eef6}
-    .container{max-width:900px;margin:0 auto;padding:40px 24px}
-    h1,h2{line-height:1.25}
-    h1{font-size:32px;margin-bottom:16px}
-    h2{font-size:20px;margin-top:28px}
-    p,li{color:#cbd5e1}
-    a{color:#6ee7b7;text-decoration:none}
-    footer{margin-top:48px;font-size:13px;color:#94a3b8}
-  </style>
+.logo{width:72px;height:72px;border-radius:12px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;padding:8px}
+.logo img{max-width:100%;max-height:100%}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:22px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
+h1{margin:0 0 8px;font-size:22px}
+h2{font-size:16px;margin-top:18px}
+p{color:#b9c7d6;line-height:1.6}
+.footer{margin-top:36px;color:#9aa4b2;font-size:13px;display:flex;justify-content:space-between;align-items:center}
+a{color:#9aa4b2}
+@media(max-width:640px){.container{padding:18px}}
+</style>
 </head>
 <body>
-  <main class="container">
-    <h1>Terms of Service</h1>
-    <p><strong>Last updated:</strong> January 2026</p>
+<div class="container">
+<header class="header">
+<div class="logo card" aria-hidden="true">
+<img src="labib.png" alt="Labib logo" />
+</div>
+<div>
+<div style="font-weight:700">Labib</div>
+<div style="color:#9aa4b2;margin-top:4px;font-size:13px">Terms of Service</div>
+</div>
+</header>
 
-    <p>These Terms of Service ("Terms") govern your use of <strong>Labib</strong> (the "Service"). By using Labib, you agree to these Terms.</p>
 
-    <h2>1. Use of the Service</h2>
-    <p>You may use Labib only in compliance with applicable laws and these Terms. You are responsible for all activity under your account.</p>
+<main class="card" role="main">
+<h1>Terms of Service</h1>
+<p>Last updated: January 2026</p>
 
-    <h2>2. Accounts</h2>
-    <p>You are responsible for maintaining the confidentiality of your account credentials and for any actions taken using your account.</p>
 
-    <h2>3. Acceptable Use</h2>
-    <ul>
-      <li>Do not misuse or attempt to disrupt the Service</li>
-      <li>Do not use Labib for unlawful or harmful activities</li>
-      <li>Do not attempt to access data that is not yours</li>
-    </ul>
+<h2>1. Acceptance</h2>
+<p>By using Labib's services you agree to these Terms. If you do not agree, do not use the services.</p>
 
-    <h2>4. Intellectual Property</h2>
-    <p>Labib and all related content, trademarks, and software are owned by us or our licensors.</p>
 
-    <h2>5. Disclaimer</h2>
-    <p>The Service is provided "as is" without warranties of any kind. We do not guarantee uninterrupted or error-free operation.</p>
+<h2>2. Use of Service</h2>
+<p>You may use the service only in compliance with applicable laws and these Terms. You are responsible for activity on your account and for obtaining necessary consents to process contact data.</p>
 
-    <h2>6. Limitation of Liability</h2>
-    <p>To the maximum extent permitted by law, Labib shall not be liable for any indirect or consequential damages.</p>
 
-    <h2>7. Termination</h2>
-    <p>We may suspend or terminate your access to the Service at any time if you violate these Terms.</p>
+<h2>3. Account & Payments</h2>
+<p>Certain features may require a paid subscription. You are responsible for payment and for maintaining accurate billing information. Refund and cancellation policies will be provided at purchase.</p>
 
-    <h2>8. Changes to Terms</h2>
-    <p>We may update these Terms from time to time. Continued use of the Service means you accept the updated Terms.</p>
 
-    <h2>9. Contact</h2>
-    <p>If you have questions about these Terms, contact us at <a href="mailto:support@labib.ai">support@labib.ai</a>.</p>
+<h2>4. Data & Integrations</h2>
+<p>When you integrate a third-party CRM, you grant us permission to access and process that data to provide features. Data handling is governed by our <a href="policy-privacy.html">Privacy Policy</a>.</p>
 
-    <footer>
-      © 2026 Labib. All rights reserved.
-    </footer>
-  </main>
+
+<h2>5. Intellectual Property</h2>
+<p>We own the service and the associated intellectual property. You retain ownership of your content and data.</p>
+
+
+<h2>6. Limitations & Liability</h2>
+<p>To the maximum extent permitted by law, Labib is provided "as is" without warranties. We are not liable for indirect or consequential damages.</p>
+
+
+<h2>7. Termination</h2>
+<p>We may suspend or terminate accounts for violations. You can terminate by closing your account and requesting data deletion.</p>
+
+
+<h2>8. Governing Law</h2>
+<p>These Terms are governed by the laws of the applicable jurisdiction (specified at signup or in customer agreement).</p>
+
+
+<p style="margin-top:18px">Questions about these Terms? Contact us at <a href="mailto:support@labib.example">support@labib.example</a>.</p>
+</main>
+
+
+<footer class="footer">
+<div>© 2026 Labib</div>
+<div style="display:flex;gap:14px">
+<a href="policy-privacy.html">Privacy</a>
+<a href="index.html">Home</a>
+</div>
+</footer>
+</div>
 </body>
 </html>
