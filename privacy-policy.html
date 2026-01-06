@@ -1,132 +1,416 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Privacy Policy | Labib</title>
-<meta name="description" content="Privacy Policy for Labib CRM Bot" />
-<style>
-:root{/* colors */}
-*{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:linear-gradient(180deg,#071026 0%, #071226 60%); color:#e6eef6}
-.container{max-width:1100px;margin:40px auto;padding:28px}
-.header{display:flex;align-items:center;gap:18px}
-.logo{width:88px;height:88px;border-radius:14px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;padding:-10px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
-.logo img{max-width:100%;max-height:100%}
-.hero{display:grid;grid-template-columns:1fr 420px;gap:34px;align-items:center;margin-top:28px}
-.title{font-size:44px;line-height:1.03;margin:0 0 12px}
-.subtitle{color:#9aa4b2;margin:0 0 22px;font-size:16px}
-.cta-row{display:flex;gap:12px;align-items:center}
-.btn{padding:12px 18px;border-radius:10px;border:0;font-weight:600;cursor:pointer}
-.btn-primary{background:linear-gradient(90deg,#6ee7b7,#34d399);color:#032022;box-shadow:0 8px 24px rgba(110,231,183,0.12)}
-.btn-ghost{background:transparent;color:#cfe6f2;border:1px solid rgba(255,255,255,0.06)}
-.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.02)}
-.feature-list{display:flex;flex-direction:column;gap:12px;margin-top:22px}
-.feature{display:flex;gap:12px;align-items:flex-start}
-.feature .dot{min-width:10px;min-height:10px;border-radius:3px;background:#6ee7b7;margin-top:6px}
-.grid-feats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
-.feat-item{background:rgba(255,255,255,0.01);padding:14px;border-radius:10px;font-size:14px}
-.form-row{display:flex;gap:8px;margin-top:12px}
-.input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
-a{color:#6ee7b7;text-decoration:none}
-.footer{margin-top:42px;color:#9aa4b2;font-size:13px;display:flex;justify-content:space-between;align-items:center}
-@media(max-width:900px){.hero{grid-template-columns:1fr}.grid-feats{grid-template-columns:repeat(2,1fr)}.logo{width:72px;height:72px}}
-@media(max-width:520px){.grid-feats{grid-template-columns:1fr}.title{font-size:28px}}
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy | Labib</title>
+  <meta name="description" content="Privacy Policy for Labib CRM Bot" />
+  <style>
+    :root {
+      /* colors */
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #071026 0%, #071226 60%);
+      color: #e6eef6
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 28px
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 18px
+    }
+
+    .logo {
+      width: 88px;
+      height: 88px;
+      border-radius: 14px;
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: -10px;
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6)
+    }
+
+    .logo img {
+      max-width: 100%;
+      max-height: 100%
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 34px;
+      align-items: center;
+      margin-top: 28px
+    }
+
+    .title {
+      font-size: 44px;
+      line-height: 1.03;
+      margin: 0 0 12px
+    }
+
+    .subtitle {
+      color: #9aa4b2;
+      margin: 0 0 22px;
+      font-size: 16px
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      align-items: center
+    }
+
+    .btn {
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 0;
+      font-weight: 600;
+      cursor: pointer
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, #6ee7b7, #34d399);
+      color: #032022;
+      box-shadow: 0 8px 24px rgba(110, 231, 183, 0.12)
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: #cfe6f2;
+      border: 1px solid rgba(255, 255, 255, 0.06)
+    }
+
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 18px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(2, 6, 23, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.02)
+    }
+
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 22px
+    }
+
+    .feature {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start
+    }
+
+    .feature .dot {
+      min-width: 10px;
+      min-height: 10px;
+      border-radius: 3px;
+      background: #6ee7b7;
+      margin-top: 6px
+    }
+
+    .grid-feats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 26px
+    }
+
+    .feat-item {
+      background: rgba(255, 255, 255, 0.01);
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 14px
+    }
+
+    .form-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 12px
+    }
+
+    .input {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.04);
+      background: transparent;
+      color: inherit
+    }
+
+    .footer {
+      margin-top: 42px;
+      color: #9aa4b2;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    @media(max-width:900px) {
+      .hero {
+        grid-template-columns: 1fr
+      }
+
+      .grid-feats {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .logo {
+        width: 72px;
+        height: 72px
+      }
+    }
+
+    @media(max-width:520px) {
+      .grid-feats {
+        grid-template-columns: 1fr
+      }
+
+      .title {
+        font-size: 28px
+      }
+    }
+  </style>
 </head>
+
 <body>
-<main class="container">
-  <header class="header">
-    <div class="logo card" aria-hidden="true">
-      <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="250" height="250"><style>.a{fill:#fff}</style><path fill-rule="evenodd" d="m225 25v200h-200v-200z"/><path fill-rule="evenodd" class="a" d="m224 126v98h-198v-98z"/><path  d="m111.4 172q1.8 0 2.4 2.6 0.7 2.6 0.7 7.9 0 5.4-0.7 8-0.7 2.5-2.4 2.5-5.6 0-9.9-2-4.3-2.1-6.2-5.9h-1.2q-6.3 8.6-33.3 8.6-7 0-15.6-0.6-8.5-0.7-15.8-1.9 1-9.7 3.8-20.7 14.5 2.5 30.5 2.5 10 0 16.1-1.2 6.1-1.3 9.1-4.1 3.2-3 3.9-7.9h9.2q0 6.4 2.3 9.4 2.3 2.8 7.1 2.8zm-43.8 48.7q-2.4-0.9-6.2-3.5-3.9-2.7-5.3-4.7 0.3-1.4 1.7-3.9 1.4-2.6 3.2-4.6 1.8-2.2 3.2-2.4 1.2-0.2 3.7 1.1 2.6 1.4 4.8 3.4 2.2 1.9 2.5 3.1 0.4 1.7-2.6 5.9-3 4.2-5 5.6zm87.6-48.7q1.8 0 2.4 2.6 0.6 2.6 0.6 7.9 0 5.4-0.6 8-0.7 2.5-2.4 2.5-11.5 0-17.5-7.9h-1q-2.4 3.4-6.7 5.1-4.2 1.7-8.3 2.2-4 0.6-10.7 0.6-1.7 0-2.4-2.5-0.7-2.6-0.7-8 0-5.3 0.6-7.9 0.7-2.6 2.5-2.6 6.2 0 10.4-0.8 4.2-0.8 7.6-3.4 3.4-2.6 5.5-7.8l9.5 1.5q-0.1 0.9-0.1 2.5 0 4.7 2.5 6.4 2.5 1.6 8.8 1.6zm-10.2 36q0.2 1.7-2.5 5.6-2.7 3.8-4.6 5.2-2.2-0.9-5.4-3.1-3.3-2.2-4.9-4.1-1.1 2.1-2.9 4.2-1.8 2.2-3 3-2.2-1.1-5.7-3.4-3.5-2.5-5-4.2 0.7-2.4 3.4-6.3 2.7-4 4.5-4 1.8 0 5.4 2.6 3.6 2.5 4.4 4.2 1.6-2.8 3.3-4.8 1.7-2 3.1-2 1.8 0 5.6 2.8 4 2.7 4.3 4.3zm46.7-36q1.8 0 2.4 2.6 0.7 2.6 0.7 7.9 0 5.4-0.7 8-0.7 2.5-2.4 2.5-4.5 0-9-1.9-4.4-1.9-6.9-6h-0.9q-2.5 4.4-7.1 6.2-4.7 1.7-11.8 1.7-1.7 0-2.4-2.5-0.7-2.6-0.7-8 0-5.3 0.6-7.9 0.7-2.6 2.5-2.6 6.9 0 11-2.4 4.1-2.4 5.6-9.6l9.6 1.5q-0.1 0.9-0.1 2.6 0 4.7 2 6.3 2.2 1.6 7.6 1.6zm-19.1 48q-2.4-0.9-6.2-3.5-3.8-2.7-5.3-4.6 0.3-1.5 1.7-4 1.4-2.6 3.3-4.6 1.8-2.2 3.1-2.4 1.3-0.2 3.7 1.1 2.6 1.4 4.8 3.4 2.3 2 2.5 3.1 0.4 1.7-2.6 6-3 4.2-5 5.5zm45.6-91q1.6 26.5 1.6 38.8 0 6.7-1 12.2-1 5.5-3.6 10.2-7.8 2.5-24.2 2.8-1.7 0-2.4-2.5-0.7-2.6-0.7-8 0-5.3 0.6-7.9 0.7-2.6 2.5-2.6 7.5 0 12.5-0.5-0.2-6.7-1.1-16.1-0.8-9.4-1.7-18.7l-0.7-6.6z"/></svg>
-    </div>
-    <div>
-      <h1 style="margin:0;font-size:18px">Labib</h1>
-      <div style="color:#9aa4b2;margin-top:4px;font-size:13px">Smart CRM assistant for teams</div>
-    </div>
-  </header>
-  <section>
+  <main class="container">
+    <header class="header">
+      <a href="/" class="logo" aria-hidden="true">
+        <svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250" width="250" height="250"><style>.a{fill:#fff}</style><path fill-rule="evenodd" d="m225 25v200h-200v-200z"/><path fill-rule="evenodd" class="a" d="m224 126v98h-198v-98z"/><path  d="m111.4 172q1.8 0 2.4 2.6 0.7 2.6 0.7 7.9 0 5.4-0.7 8-0.7 2.5-2.4 2.5-5.6 0-9.9-2-4.3-2.1-6.2-5.9h-1.2q-6.3 8.6-33.3 8.6-7 0-15.6-0.6-8.5-0.7-15.8-1.9 1-9.7 3.8-20.7 14.5 2.5 30.5 2.5 10 0 16.1-1.2 6.1-1.3 9.1-4.1 3.2-3 3.9-7.9h9.2q0 6.4 2.3 9.4 2.3 2.8 7.1 2.8zm-43.8 48.7q-2.4-0.9-6.2-3.5-3.9-2.7-5.3-4.7 0.3-1.4 1.7-3.9 1.4-2.6 3.2-4.6 1.8-2.2 3.2-2.4 1.2-0.2 3.7 1.1 2.6 1.4 4.8 3.4 2.2 1.9 2.5 3.1 0.4 1.7-2.6 5.9-3 4.2-5 5.6zm87.6-48.7q1.8 0 2.4 2.6 0.6 2.6 0.6 7.9 0 5.4-0.6 8-0.7 2.5-2.4 2.5-11.5 0-17.5-7.9h-1q-2.4 3.4-6.7 5.1-4.2 1.7-8.3 2.2-4 0.6-10.7 0.6-1.7 0-2.4-2.5-0.7-2.6-0.7-8 0-5.3 0.6-7.9 0.7-2.6 2.5-2.6 6.2 0 10.4-0.8 4.2-0.8 7.6-3.4 3.4-2.6 5.5-7.8l9.5 1.5q-0.1 0.9-0.1 2.5 0 4.7 2.5 6.4 2.5 1.6 8.8 1.6zm-10.2 36q0.2 1.7-2.5 5.6-2.7 3.8-4.6 5.2-2.2-0.9-5.4-3.1-3.3-2.2-4.9-4.1-1.1 2.1-2.9 4.2-1.8 2.2-3 3-2.2-1.1-5.7-3.4-3.5-2.5-5-4.2 0.7-2.4 3.4-6.3 2.7-4 4.5-4 1.8 0 5.4 2.6 3.6 2.5 4.4 4.2 1.6-2.8 3.3-4.8 1.7-2 3.1-2 1.8 0 5.6 2.8 4 2.7 4.3 4.3zm46.7-36q1.8 0 2.4 2.6 0.7 2.6 0.7 7.9 0 5.4-0.7 8-0.7 2.5-2.4 2.5-4.5 0-9-1.9-4.4-1.9-6.9-6h-0.9q-2.5 4.4-7.1 6.2-4.7 1.7-11.8 1.7-1.7 0-2.4-2.5-0.7-2.6-0.7-8 0-5.3 0.6-7.9 0.7-2.6 2.5-2.6 6.9 0 11-2.4 4.1-2.4 5.6-9.6l9.6 1.5q-0.1 0.9-0.1 2.6 0 4.7 2 6.3 2.2 1.6 7.6 1.6zm-19.1 48q-2.4-0.9-6.2-3.5-3.8-2.7-5.3-4.6 0.3-1.5 1.7-4 1.4-2.6 3.3-4.6 1.8-2.2 3.1-2.4 1.3-0.2 3.7 1.1 2.6 1.4 4.8 3.4 2.3 2 2.5 3.1 0.4 1.7-2.6 6-3 4.2-5 5.5zm45.6-91q1.6 26.5 1.6 38.8 0 6.7-1 12.2-1 5.5-3.6 10.2-7.8 2.5-24.2 2.8-1.7 0-2.4-2.5-0.7-2.6-0.7-8 0-5.3 0.6-7.9 0.7-2.6 2.5-2.6 7.5 0 12.5-0.5-0.2-6.7-1.1-16.1-0.8-9.4-1.7-18.7l-0.7-6.6z"/></svg>
+      </a>
+      <div>
+        <h1 style="margin:0;font-size:18px">Labib</h1>
+        <div style="color:#9aa4b2;margin-top:4px;font-size:13px">Smart CRM assistant for teams</div>
+      </div>
+    </header>
+    <section>
       <div class="wrapper-content ">
 
-                    <div class="section-scroll pinside60" id="section-about">
-                            
-                             <hr>
-                            <h1 style="box-sizing: border-box; font-size: 2.125rem; line-height: 1.4; margin: 25px 0px 15px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Privacy Policy</h1>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">Labib built the Labib app as a Free app. This SERVICE is provided by Labib at no cost and is intended for use as is</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. we will not use or share your information with anyone except as described in this Privacy Policy</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at NMFY unless otherwise defined in this Privacy Policy</span></p>
-<p>&nbsp;</p>
-<h1 style="box-sizing: border-box; font-size: 2.125rem; line-height: 1.4; margin: 25px 0px 15px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Collecting and Using Your Personal Data</h1>
-<h2 style="box-sizing: border-box; font-size: 1.65rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Types of Data Collected</h2>
-<h3 style="box-sizing: border-box; font-size: 1.35rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Personal Data</h3>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally, identifiable information may include but is not limited to</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem;"><span style="color: #808080;">&nbsp; &nbsp; First name and last name -&nbsp;</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem;"><span style="color: #808080;">&nbsp; &nbsp; Phone number -</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem;"><span style="color: #808080;">&nbsp; &nbsp; Country, City, Street&nbsp;-</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem;"><span style="color: #808080;">&nbsp; &nbsp; Usage Data -</span></p>
-<p>&nbsp;</p>
-<h3 style="box-sizing: border-box; font-size: 1.35rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Usage Data</h3>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">Usage Data is collected automatically when using the Service</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">&nbsp;</p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><strong>Information Collection and Use</strong></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">The app does use third-party services that may collect information used to identify you</span></p>
-<h2 style="box-sizing: border-box; font-size: 1.65rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Use of Your Personal Data</h2>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">The Company may use Personal Data for the following purposes:</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">The app does use third-party services that may collect information used to identify you</span></p>
-<h2 style="box-sizing: border-box; font-size: 1.65rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Log Data</h2>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;">we want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">&nbsp;</p>
-<h2 style="box-sizing: border-box; font-size: 1.65rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Cookies</h2>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">&nbsp;</p>
-<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><strong><span style="font-size: 13.5pt; font-family: 'Helvetica',sans-serif; mso-fareast-font-family: 'Times New Roman'; color: black;">Links to Other Sites</span></strong></p>
-<p class="MsoNormal" style="mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; line-height: normal;"><span style="font-size: 13.5pt; font-family: 'Helvetica',sans-serif; mso-fareast-font-family: 'Times New Roman'; color: gray;">This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. we have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">&nbsp;</p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><strong>Service Providers</strong></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">we may employ third-party companies and individuals due to the following reasons:</span></p>
-<h6><span style="color: #808080;">To facilitate our Service -</span></h6>
-<h6><span style="color: #808080;">To provide the Service on our behalf -</span></h6>
-<h6><span style="color: #808080;">To perform Service-related services -</span></h6>
-<h6><span style="color: #808080;">To assist us in analyzing how our Service is used -</span></h6>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">we want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose</span></p>
-<h3 style="box-sizing: border-box; font-size: 1.35rem; line-height: inherit; margin: 20px 0px 10px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Other legal requirements</h3>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;"><span style="color: #808080;">The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</span></p>
-<p><span style="color: #808080;">Comply with a legal obligation -</span></p>
-<p><span style="color: #808080;">Protect and defend the rights or property of the Company -</span></p>
-<p><span style="color: #808080;">Prevent or investigate possible wrongdoing in connection with the Service -</span></p>
-<p><span style="color: #808080;">Protect the personal safety of Users of the Service or the public -</span></p>
-<p><span style="color: #808080;">Protect against legal liability -</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><strong>Security</strong></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">we value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security</span></p>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">&nbsp;</p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><strong>Children’s Privacy</strong></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">These Services do not address anyone under the age of 13. we do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions</span></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><strong>Changes to This Privacy Policy</strong></p>
-<p style="color: #000000; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: medium;"><span style="color: #808080;">we may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. we will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page</span></p>
-<h1 style="box-sizing: border-box; font-size: 2.125rem; line-height: 1.4; margin: 25px 0px 15px; padding-bottom: 0px; color: #464855; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">Contact Us</h1>
-<p style="box-sizing: border-box; margin: 0px 0px 10px; font-size: 1rem; color: #6a6f82; font-family: 'helvetica neue', Helvetica, Arial, sans-serif;">If you have any questions about this Privacy Policy, You can contact us</p>
-<p>&nbsp;By visiting this page on our website: <a style="box-sizing: border-box; background-color: transparent; color: #6a6f82; transition: color 0.3s ease 0s;" href="https://nmfy.org/en/#contact-us" target="_blank" rel="external nofollow noopener">https://nmfy.org/en/#contact-us</a></p> 
-                            
-                           
-                    </div>
-               </div>
+        <div class="section-scroll pinside60" id="section-about">
+
+          <hr>
+          <h1>
+            Privacy Policy</h1>
+          <p>
+            <span>Labib built the Labib app as a Free app. This SERVICE is provided by Labib at
+              no cost and is intended for use as is</span>
+          </p>
+          <p>
+            <span>This page is used to inform visitors regarding our policies with the
+              collection, use, and disclosure of Personal Information if anyone decided to use our Service</span>
+          </p>
+          <p>
+            <span>If you choose to use our Service, then you agree to the collection and use of
+              information in relation to this policy. The Personal Information that we collect is used for providing and
+              improving the Service. we will not use or share your information with anyone except as described in this
+              Privacy Policy</span>
+          </p>
+          <p>
+            <span>The terms used in this Privacy Policy have the same meanings as in our Terms
+              and Conditions, which is accessible at Labib unless otherwise defined in this Privacy Policy</span>
+          </p>
+          <p>&nbsp;</p>
+          <h1>
+            Collecting and Using Your Personal Data</h1>
+          <h2>
+            Types of Data Collected</h2>
+          <h3>
+            Personal Data</h3>
+          <p>
+            <span>While using Our Service, We may ask You to provide Us with certain personally
+              identifiable information that can be used to contact or identify You. Personally, identifiable information
+              may include but is not limited to</span>
+          </p>
+          <p><span>&nbsp;
+              &nbsp; First name and last name -&nbsp;</span></p>
+          <p><span>&nbsp;
+              &nbsp; Phone number -</span></p>
+          <p><span>&nbsp;
+              &nbsp; Country, City, Street&nbsp;-</span></p>
+          <p><span>&nbsp;
+              &nbsp; Usage Data -</span></p>
+          <p>&nbsp;</p>
+          <h3>
+            Usage Data</h3>
+          <p>
+            <span>Usage Data is collected automatically when using the Service</span>
+          </p>
+          <p>
+            <span>Usage Data may include information such as Your Device's Internet Protocol
+              address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the
+              time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic
+              data</span>
+          </p>
+          <p>
+            <span>When You access the Service by or through a mobile device, We may collect
+              certain information automatically, including, but not limited to, the type of mobile device You use, Your
+              mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of
+              mobile Internet browser You use, unique device identifiers and other diagnostic data</span>
+          </p>
+          <p>
+            <span>We may also collect information that Your browser sends whenever You visit our
+              Service or when You access the Service by or through a mobile device</span>
+          </p>
+          <p>&nbsp;</p>
+          <p>
+            <strong>Information Collection and Use</strong>
+          </p>
+          <p>
+            <span>For a better experience, while using our Service, we may require you to
+              provide us with certain personally identifiable information. The information that we request will be
+              retained by us and used as described in this privacy policy</span>
+          </p>
+          <p>
+            <span>The app does use third-party services that may collect information used to
+              identify you</span>
+          </p>
+          <h2>
+            Use of Your Personal Data</h2>
+          <p>
+            <span>The Company may use Personal Data for the following purposes:</span>
+          </p>
+          <p>
+            <span>For a better experience, while using our Service, we may require you to
+              provide us with certain personally identifiable information. The information that we request will be
+              retained by us and used as described in this privacy policy</span>
+          </p>
+          <p>
+            <span>The app does use third-party services that may collect information used to
+              identify you</span>
+          </p>
+          <h2>
+            Log Data</h2>
+          <p>
+            <span>we
+              want to inform you that whenever you use our Service, in a case of an error in the app we collect data and
+              information (through third party products) on your phone called Log Data. This Log Data may include
+              information such as your device Internet Protocol (“IP”) address, device name, operating system version,
+              the configuration of the app when utilizing our Service, the time and date of your use of the Service, and
+              other statistics</span>
+          </p>
+          <p>&nbsp;</p>
+          <h2>
+            Cookies</h2>
+          <p>
+            <span>Cookies are files with a small amount of data that are commonly used as
+              anonymous unique identifiers. These are sent to your browser from the websites that you visit and are
+              stored on your device's internal memory</span>
+          </p>
+          <p>
+            <span>This Service does not use these “cookies” explicitly. However, the app may use
+              third party code and libraries that use “cookies” to collect information and improve their services. You
+              have the option to either accept or refuse these cookies and know when a cookie is being sent to your
+              device. If you choose to refuse our cookies, you may not be able to use some portions of this
+              Service</span>
+          </p>
+          <p>&nbsp;</p>
+          <p>
+            <strong><span>Links
+                to Other Sites</span></strong>
+          </p>
+          <p><span>This
+              Service may contain links to other sites. If you click on a third-party link, you will be directed to that
+              site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review
+              the Privacy Policy of these websites. we have no control over and assume no responsibility for the
+              content, privacy policies, or practices of any third-party sites or services</span></p>
+          <p>&nbsp;</p>
+          <p>
+            <strong>Service Providers</strong>
+          </p>
+          <p>
+            <span>we may employ third-party companies and individuals due to the following
+              reasons:</span>
+          </p>
+          <h6><span>To facilitate our Service -</span></h6>
+          <h6><span>To provide the Service on our behalf -</span></h6>
+          <h6><span>To perform Service-related services -</span></h6>
+          <h6><span>To assist us in analyzing how our Service is used -</span></h6>
+          <p>
+            <span>we want to inform users of this Service that these third parties have access
+              to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However,
+              they are obligated not to disclose or use the information for any other purpose</span>
+          </p>
+          <h3>
+            Other legal requirements</h3>
+          <p>
+            <span>The Company may disclose Your Personal Data in the good faith belief that such
+              action is necessary to:</span>
+          </p>
+          <p><span>Comply with a legal obligation -</span></p>
+          <p><span>Protect and defend the rights or property of the Company -</span></p>
+          <p><span>Prevent or investigate possible wrongdoing in connection with the Service
+              -</span></p>
+          <p><span>Protect the personal safety of Users of the Service or the public -</span>
+          </p>
+          <p><span>Protect against legal liability -</span></p>
+          <p>
+            <strong>Security</strong>
+          </p>
+          <p>
+            <span>we value your trust in providing us your Personal Information, thus we are
+              striving to use commercially acceptable means of protecting it. But remember that no method of
+              transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot
+              guarantee its absolute security</span>
+          </p>
+          <p>&nbsp;</p>
+          <p>
+            <strong>Children's Privacy</strong>
+          </p>
+          <p>
+            <span>These Services do not address anyone under the age of 13. we do not knowingly
+              collect personally identifiable information from children under 13. In the case we discover that a child
+              under 13 has provided us with personal information, we immediately delete this from our servers. If you
+              are a parent or guardian and you are aware that your child has provided us with personal information,
+              please contact us so that we will be able to do necessary actions</span>
+          </p>
+          <p>
+            <strong>Changes to This Privacy Policy</strong>
+          </p>
+          <p>
+            <span>we may update our Privacy Policy from time to time. Thus, you are advised to
+              review this page periodically for any changes. we will notify you of any changes by posting the new
+              Privacy Policy on this page. These changes are effective immediately after they are posted on this
+              page</span>
+          </p>
+          <h1>
+            Contact Us</h1>
+          <p>
+            If you have any questions about this Privacy Policy, You can contact us</p>
+          <p>&nbsp;By visiting this page on our website: <a href="https://alssadh.com" target="_blank" rel="external nofollow noopener">alssadh.com</a></p>
+        </div>
+      </div>
 
     </section>
 
-  <footer class="footer">
-    <div>© 2026 Labib</div>
-    <div style="display:flex;gap:14px">
-      <a href="/privacy-policy" style="color:#9aa4b2;text-decoration:none;font-size:13px">Privacy</a>
-      <a href="/terms" style="color:#9aa4b2;text-decoration:none;font-size:13px">Terms</a>
-    </div>
-  </footer>
-</main>
+    <footer class="footer">
+      <div>© 2026 Labib</div>
+      <div style="display:flex;gap:14px">
+        <a href="/privacy-policy" style="color:#9aa4b2;text-decoration:none;font-size:13px">Privacy</a>
+        <a href="/terms" style="color:#9aa4b2;text-decoration:none;font-size:13px">Terms</a>
+      </div>
+    </footer>
+  </main>
 </body>
+
 </html>
